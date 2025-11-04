@@ -1,5 +1,5 @@
 .home {
-    height: 780px;
+    height: 775px;
     position: relative;
     background-color: #f8a6b4;
 }
@@ -73,9 +73,6 @@
 }
 
 @media (max-width: 1024px) {
-    .home {
-        height: 1300px;
-    }
 
     .home .content {
         width: 100%;
@@ -96,9 +93,6 @@
 }
 
 @media (max-width: 768px) {
-    .home {
-        height: 1100px;
-    }
     .home .bg {
         height: 900px;
     }
@@ -129,9 +123,6 @@
 }
 
 @media (max-width: 480px) {
-    .home {
-        height: 950px;
-    }
     .home .bg {
         height: 700px;
     }  
