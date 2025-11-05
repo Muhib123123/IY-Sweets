@@ -7,6 +7,7 @@ import cakeWithMilk from '../assets/cakeWithMilk.jpg'
 import aklear from '../../src/assets/aklear.jpg'
 import norCake from '../../src/assets/norCake.jpg'
 import iceCake from '../../src/assets/iceCake.jpg'
+import donuts from '../../src/assets/donuts.jpg'
 
 function Menu() {
 
@@ -16,6 +17,12 @@ function Menu() {
             src: cheeseCake,
             title: 'تشيز كيك',
             link: '/menu/cheeseCake',
+        },
+        {
+            id: crypto.randomUUID(),
+            src: donuts,
+            title: "دونات",
+            link: '/menu/donuts',
         },
         {
             id: crypto.randomUUID(),

@@ -10,6 +10,7 @@ import CakeWithMilk from './menu/items/cakeWithMilk'
 import Aklear from './menu/items/aklear'
 import NorCake from './menu/items/norCake'
 import IceCake from './menu/items/iceCake'
+import Donuts from './menu/items/donuts'
 function App() {
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/menu/aklear" element={<Aklear />} />
         <Route path="/menu/norCake" element={<NorCake />} />
         <Route path="/menu/iceCake" element={<IceCake />} />
+        <Route path="/menu/donuts" element={<Donuts />} />
       </Routes>
     </>
   )

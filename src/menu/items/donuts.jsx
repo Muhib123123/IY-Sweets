@@ -1,14 +1,15 @@
-import Header from "../../home/header"
+import Header from "../../home/header";
 import './items.css'
 import { Link } from 'react-router'
-function Aklear() {
+
+function Donuts() {
     return (
         <>
-            <title>IY-Aklear</title>
+            <title>IY-Donuts</title>
             <Header />
-            
+
             <div className="title-dis">
-                <h1>اكلير</h1>
+                <h1>دونات</h1>
                 <h2>السعر</h2>
             </div>
 
@@ -28,5 +29,4 @@ function Aklear() {
     )
 }
 
-
-export default Aklear
+export default Donuts

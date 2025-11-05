@@ -1,0 +1,160 @@
+.title-dis {
+    width: 80%;
+    margin: 10px auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    color: black;
+}
+
+.title-dis h1 {
+    font-size: 1.8rem;
+}
+
+.title-dis h2 {
+    font-size: 1.4rem;
+}
+
+.br {
+    height: 4px;
+    width: 60%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #c6586a;
+}
+
+.items-dis {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-dis {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 10px 80px;
+    padding-right: 100px;
+    background-color: #fdb8c3;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+}
+
+.item-dis p {
+    font-size: 1.2rem;
+}
+
+.order-btn {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.link-btn {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #c6586a;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.link-btn:hover {
+    color: #60be3d;
+}
+
+@media (max-width: 1024px) {
+    .title-dis h1 {
+        font-size: 1.6rem;
+    }
+    .title-dis h2 {
+        font-size: 1.2rem;
+    }
+    .items-dis {
+        width: 90%;
+    }
+    .br {
+        width: 70%;
+    }
+    .item-dis {
+        padding-left: 70px;
+        padding-right: 80px;
+    }
+    .item-dis p {
+        font-size: 1.1rem;
+    }
+    .link-btn {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-dis {
+        width: 100%;
+    }
+    .title-dis h1 {
+        font-size: 1.4rem;
+    }
+    .title-dis h2 {
+        font-size: 1rem;
+    }
+    .items-dis {
+        width: 100%;
+    }
+    .br {
+        width: 80%;
+    }
+    .item-dis {
+        width: 75%;
+        padding-left: 8%;
+        padding-right: 60px;
+        margin-bottom: 10px;
+    }
+    .item-dis p {
+        font-size: 1rem;
+    }
+    .link-btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-dis {
+        justify-content: space-around;
+    }
+    .title-dis h1 {
+        font-size: 1rem;
+        
+    }
+    .title-dis h2 {
+        font-size: 0.8rem;
+    }
+    .br {
+        width: 90%;
+    }
+    .item-dis{
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 40px;
+        margin-bottom: 0px;
+    }
+    .item-dis p {
+        font-size: 0.8rem;
+    }
+    .order-btn {
+        margin-top: 30px;
+    }
+    .link-btn {
+        font-size: 0.8rem;
+    }
+}
