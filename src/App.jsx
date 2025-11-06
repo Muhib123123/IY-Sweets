@@ -1,6 +1,6 @@
 import { Routes } from "react-router";
 import { Route } from "react-router";
-import { StrictMode } from "react";
+import { BrowserRouter } from "react-router";
 import Home from "./home/Home";
 import Menu from "./menu/Menu";
 import CheeseCake from "./menu/items/cheeseCake";
