@@ -3,23 +3,68 @@ import "./items.css";
 import { Link } from "react-router";
 
 function Donuts() {
+  const price = 40;
+  const price2 = 50;
+  const items = [
+    {
+      id: crypto.randomUUID(),
+      price: price,
+      name: "شوكولا سودة",
+    },
+    {
+      id: crypto.randomUUID(),
+      price: price,
+      name: "شوكولا بيضة",
+    }
+  ];
+
+  const items2 = [
+    {
+      id: crypto.randomUUID(),
+      price: price2,
+      name: "شوكولا",
+    },
+    {
+      id: crypto.randomUUID(),
+      price: price2,
+      name: "اكلير",
+    }
+  ];
+
   return (
     <>
       <title>IY-Donuts</title>
       <Header />
 
       <div className="title-dis">
-        <h1>دونات</h1>
+        <h1>دونات سادة</h1>
         <h2>السعر</h2>
       </div>
 
       <div className="br"></div>
 
       <div className="items-dis">
-        <div className="item-dis">
-          <p>الحبة</p>
-          <p>20₺</p>
-        </div>
+        {items.map((item) => (
+          <div key={item.id} className="item-dis">
+            <p>{item.name}</p>
+            <p>{item.price}₺</p>
+          </div>
+        ))}
+      </div>
+      <div className="title-dis">
+        <h1>دونات محشية</h1>
+        <h2>السعر</h2>
+      </div>
+
+      <div className="br"></div>
+
+      <div className="items-dis">
+        {items2.map((item) => (
+          <div key={item.id} className="item-dis">
+            <p>{item.name}</p>
+            <p>{item.price}₺</p>
+          </div>
+        ))}
       </div>
 
       <div className="order-btn">
