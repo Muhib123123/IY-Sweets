@@ -13,15 +13,15 @@ function App() {
   return (
 
     <Routes>
-      <Route path="/IY-Sweets/" element={<Home />} />
-      <Route path="/IY-Sweets//menu" element={<Menu />} />
-      <Route path="/IY-Sweets//menu/cheeseCake" element={<CheeseCake />} />
-      <Route path="/IY-Sweets//menu/cupCake" element={<CupCake />} />
-      <Route path="/IY-Sweets//menu/cakeWithMilk" element={<CakeWithMilk />} />
-      <Route path="/IY-Sweets//menu/aklear" element={<Aklear />} />
-      <Route path="/IY-Sweets//menu/norCake" element={<NorCake />} />
-      <Route path="/IY-Sweets//menu/iceCake" element={<IceCake />} />
-      <Route path="/IY-Sweets//menu/donuts" element={<Donuts />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/menu" element={<Menu />} />
+      <Route path="/menu/cheeseCake" element={<CheeseCake />} />
+      <Route path="/menu/cupCake" element={<CupCake />} />
+      <Route path="/menu/cakeWithMilk" element={<CakeWithMilk />} />
+      <Route path="/menu/aklear" element={<Aklear />} />
+      <Route path="/menu/norCake" element={<NorCake />} />
+      <Route path="/menu/iceCake" element={<IceCake />} />
+      <Route path="/menu/donuts" element={<Donuts />} />
     </Routes>
 
   );
