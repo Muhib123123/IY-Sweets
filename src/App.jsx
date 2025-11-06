@@ -1,19 +1,15 @@
-
-import { Routes } from 'react-router'
-import { Route } from 'react-router'
-
-import Home from './home/Home'
-import Menu from './menu/Menu'
-import CheeseCake from './menu/items/cheeseCake'
-import CupCake from './menu/items/cupCake'
-import CakeWithMilk from './menu/items/cakeWithMilk'
-import Aklear from './menu/items/aklear'
-import NorCake from './menu/items/norCake'
-import IceCake from './menu/items/iceCake'
-import Donuts from './menu/items/donuts'
+import { Routes } from "react-router";
+import { Route } from "react-router";
+import Home from "./home/Home";
+import Menu from "./menu/Menu";
+import CheeseCake from "./menu/items/cheeseCake";
+import CupCake from "./menu/items/cupCake";
+import CakeWithMilk from "./menu/items/cakeWithMilk";
+import Aklear from "./menu/items/aklear";
+import NorCake from "./menu/items/norCake";
+import IceCake from "./menu/items/iceCake";
+import Donuts from "./menu/items/donuts";
 function App() {
-
-
   return (
     <>
       <Routes>
@@ -28,7 +24,7 @@ function App() {
         <Route path="/menu/donuts" element={<Donuts />} />
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

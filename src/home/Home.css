@@ -1,152 +1,148 @@
 .home {
-    height: 775px;
-    position: relative;
-    background-color: #f8a6b4;
+  height: 775px;
+  position: relative;
+  background-color: #f8a6b4;
 }
-
 
 .home .bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
-
-
 .home .content {
-    width: 80%;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 .home .content .title {
-    width: 390px;
-    z-index: 2;
+  width: 390px;
+  z-index: 2;
 }
 
 .home .content .title h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    color: white;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: white;
 }
 
 .home .content .text {
-    width: auto;
-    text-align: center;
-    z-index: 2;
+  width: auto;
+  text-align: center;
+  z-index: 2;
 }
 
 .home .content .text p {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
 }
 
 .home .content .text .p2 {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .home .content .text a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
-    background-color: #ac4b5d;
-    padding: 10px 20px;
-    border-radius: 10px;
-    transition: all .2s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #ac4b5d;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
 }
 
 .home .content .text a:hover {
-    background-color: rgb(173, 87, 103);
+  background-color: rgb(173, 87, 103);
 }
 
 @media (max-width: 1200px) {
-    .home .content {
-        width: 90%;
-    }
+  .home .content {
+    width: 90%;
+  }
 }
 
 @media (max-width: 1024px) {
-
-    .home .content {
-        width: 100%;
-    }
-    .home .content .title h1 {
-        font-size: 3.5rem;
-    }
-    .home .content .text {
-        width: 500px;
-        text-align: center;
-    }
-    .home .content .text p {
-        font-size: 2rem;
-    }
-    .home .content .text a {
-        font-size: 1.2rem;
-    }
+  .home .content {
+    width: 100%;
+  }
+  .home .content .title h1 {
+    font-size: 3.5rem;
+  }
+  .home .content .text {
+    width: 500px;
+    text-align: center;
+  }
+  .home .content .text p {
+    font-size: 2rem;
+  }
+  .home .content .text a {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .home .bg {
-        height: 900px;
-    }
-  
-    .home .content {
-        width: 100%;
-    }
+  .home .bg {
+    height: 900px;
+  }
 
-    .home .content .title {
-        width: 320px;
-    }
-    .home .content .title h1 {
-        font-size: 3rem;
-    }
-    .home .content .text {
-        width: 400px;
-        text-align: center;
-    }
-    .home .content .text p {
-        font-size: 1.5rem;
-    }
-    .home .content .text .p2 {
-        margin-bottom: 40px;
-    }
-    .home .content .text a {
-        font-size: 1rem;
-    }
+  .home .content {
+    width: 100%;
+  }
+
+  .home .content .title {
+    width: 320px;
+  }
+  .home .content .title h1 {
+    font-size: 3rem;
+  }
+  .home .content .text {
+    width: 400px;
+    text-align: center;
+  }
+  .home .content .text p {
+    font-size: 1.5rem;
+  }
+  .home .content .text .p2 {
+    margin-bottom: 40px;
+  }
+  .home .content .text a {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .home .bg {
-        height: 700px;
-    }  
-    .home .content {
-        width: 100%;
-    }
-    .home .content .title {
-        width: 230px;
-    }
-    .home .content .title h1 {
-        font-size: 2.5rem;
-    }
-    .home .content .text {
-        width: 260px;
-        text-align: center;
-    }
-    .home .content .text p {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-    }
-    .home .content .text .p2 {
-        margin-bottom: 30px;
-    }
-    .home .content .text a {
-        font-size: 0.8rem;
-    }
+  .home .bg {
+    height: 700px;
+  }
+  .home .content {
+    width: 100%;
+  }
+  .home .content .title {
+    width: 230px;
+  }
+  .home .content .title h1 {
+    font-size: 2.5rem;
+  }
+  .home .content .text {
+    width: 260px;
+    text-align: center;
+  }
+  .home .content .text p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .home .content .text .p2 {
+    margin-bottom: 30px;
+  }
+  .home .content .text a {
+    font-size: 0.8rem;
+  }
 }
