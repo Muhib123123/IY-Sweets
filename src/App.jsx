@@ -1,6 +1,5 @@
-import { Routes } from "react-router";
-import { Route } from "react-router";
-import { BrowserRouter } from "react-router";
+
+import { HashRouter, Routes, Route } from "react-router";
 import Home from "./home/Home";
 import Menu from "./menu/Menu";
 import CheeseCake from "./menu/items/cheeseCake";
@@ -12,7 +11,7 @@ import IceCake from "./menu/items/iceCake";
 import Donuts from "./menu/items/donuts";
 function App() {
   return (
-    <BrowserRouter basename="/IY-Sweets">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
@@ -24,7 +23,7 @@ function App() {
         <Route path="/menu/iceCake" element={<IceCake />} />
         <Route path="/menu/donuts" element={<Donuts />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
