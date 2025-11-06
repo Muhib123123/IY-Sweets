@@ -37,7 +37,7 @@ function NorCake() {
       <div className="order-btn">
         <Link
           className="link-btn"
-          to="https://wa.me/+963940904038?text=السلام%20عليكم%2C%20اريد%20طلب%20بعض%20الحلويات"
+          to="https://wa.me/+905313591682?text=السلام%20عليكم%2C%20اريد%20طلب%20بعض%20الحلويات"
         >
           اطلب الان
         </Link>
