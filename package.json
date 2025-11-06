@@ -1,6 +1,6 @@
 {
   "name": "menu-react",
-  "homepage": "https://github.com/Muhib123123/IY-Sweets/",
+  "homepage": "/IY-Sweets/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
