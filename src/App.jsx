@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/IY-Sweets/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/menu/cheeseCake" element={<CheeseCake />} />
         <Route path="/menu/cupCake" element={<CupCake />} />
