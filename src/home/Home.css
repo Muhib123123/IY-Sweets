@@ -25,6 +25,7 @@
 .home .content .title {
   width: 390px;
   z-index: 2;
+  opacity: 0;
 }
 
 .home .content .title h1 {
@@ -45,8 +46,13 @@
   color: white;
 }
 
+.home .content .text .p1 {
+  opacity: 0;
+}
+
 .home .content .text .p2 {
   margin-bottom: 60px;
+  opacity: 0;
 }
 
 .home .content .text a {
@@ -57,10 +63,27 @@
   padding: 10px 20px;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
+  opacity: 0;
 }
 
 .home .content .text a:hover {
   background-color: rgb(173, 87, 103);
+}
+
+.show-home {
+  animation: slide-up-home 1s ease-in-out forwards;
+  opacity: 1;
+}
+
+@keyframes slide-up-home {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -146,3 +169,4 @@
     font-size: 0.8rem;
   }
 }
+
