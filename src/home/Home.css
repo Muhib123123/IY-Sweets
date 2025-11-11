@@ -1,5 +1,5 @@
 .home {
-  height: 775px;
+  height: 100vh;
   position: relative;
   background-color: #f8a6b4;
 }
@@ -170,3 +170,8 @@
   }
 }
 
+@media (max-height: 550px) {
+  .home {
+    height: 150vh;
+  }
+}
