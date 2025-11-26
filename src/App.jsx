@@ -9,6 +9,7 @@ import Aklear from "./menu/items/aklear";
 import NorCake from "./menu/items/norCake";
 import IceCake from "./menu/items/iceCake";
 import Donuts from "./menu/items/donuts";
+import NotFound from "./NotFound";
 function App() {
   return (
     <HashRouter>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/menu/norCake" element={<NorCake />} />
         <Route path="/menu/iceCake" element={<IceCake />} />
         <Route path="/menu/donuts" element={<Donuts />} />
+        <Route path="*" element={<NotFound />} ></Route>
       </Routes>
     </HashRouter>
   );
