@@ -20,9 +20,9 @@ function Header() {
         onChange={(e) => {
           i18n.changeLanguage(e.target.value);
         }}
-        style={i18n.language === "ar" ? {direction: "rtl"} : {direction: "ltr"}}
+        style={i18n.language === "ar" ? { direction: "rtl" } : { direction: "ltr" }}
 >
-        <option value="ar">{t("Arabic")} 🇦🇷</option>
+        <option value="ar">{t("Arabic")} 🇸🇦</option>
         <option value="en">{t("English")} 🇬🇧</option>
         <option value="tr">{t("Turkish")} 🇹🇷</option>
       </select>
