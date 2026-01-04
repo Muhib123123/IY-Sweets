@@ -8,50 +8,52 @@ import aklear from "../../src/assets/aklear.jpg";
 import norCake from "../../src/assets/norCake.jpg";
 import iceCake from "../../src/assets/iceCake.jpg";
 import donuts from "../../src/assets/donuts.jpg";
+import { useTranslation } from "react-i18next";
 
 function Menu() {
+  const { t } = useTranslation();
   const items = [
     {
       id: crypto.randomUUID(),
       src: cheeseCake,
-      title: "تشيز كيك",
+      title: t("Cheesecakes"),
       link: "/menu/cheeseCake",
     },
     {
       id: crypto.randomUUID(),
       src: donuts,
-      title: "دونات",
+      title: t("Donuts"),
       link: "/menu/donuts",
     },
     {
       id: crypto.randomUUID(),
       src: cupCake,
-      title: "كاسة كيك",
-      link: "/menu/cupCake",
+      title: t("Cupcakes"),
+      link: "/menu/cupCakes",
     },
     {
       id: crypto.randomUUID(),
       src: cakeWithMilk,
-      title: "كيكة بالحليب",
-      link: "/menu/cakeWithMilk",
+      title: t("Milk Cake"),
+      link: "/menu/milkCake",
     },
     {
       id: crypto.randomUUID(),
       src: aklear,
-      title: "اكلير",
-      link: "/menu/aklear",
+      title: t("Éclair"),
+      link: "/menu/eclair",
     },
     {
       id: crypto.randomUUID(),
       src: iceCake,
-      title: "ايسكريم كيك",
-      link: "/menu/iceCake",
+      title: t("Ice Cream Cakes"),
+      link: "/menu/iceCreamCakes",
     },
     {
       id: crypto.randomUUID(),
       src: norCake,
-      title: "كيك سادة",
-      link: "/menu/norCake",
+      title: t("Plain Cake"),
+      link: "/menu/plainCake",
     },
   ];
 

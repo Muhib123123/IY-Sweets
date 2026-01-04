@@ -27,6 +27,21 @@
   font-size: 1.2rem;
 }
 
+.lang {
+  background-color: #f8a6b4;
+  border: 0px;
+  font-size: 1rem;
+  color: white;
+}
+
+.lang:focus-visible, .lang:hover, .lang:active {
+  background-color: #f8a6b4;
+  color: white;
+  border: 0px;
+  outline: 0px;
+}
+
+
 @media (max-width: 1024px) {
   .header a {
     font-size: 1.1rem;
@@ -45,6 +60,12 @@
     width: 65px;
     height: 65px;
   }
+  .lang {
+    font-size: 0.9rem;
+    option{
+      font-size: 0.9rem;
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -54,5 +75,13 @@
   .header img {
     width: 60px;
     height: 60px;
+  }
+  .lang {
+    font-size: 0.8rem;
+    option{
+      font-size: 0.7rem;
+      outline: 0px;
+      border: 0px;
+    }
   }
 }

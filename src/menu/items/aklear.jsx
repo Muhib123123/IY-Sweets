@@ -1,33 +1,42 @@
 import Header from "../../home/header";
 import "./items.css";
 import { Link } from "react-router";
+import { useTranslation } from "react-i18next";
 function Aklear() {
+  const { t, i18n } = useTranslation();
   return (
     <>
-      <title>IY-Aklear</title>
+      <title>IY-Éclair</title>
       <Header />
-
-      <div className="title-dis">
-        <h1>اكلير</h1>
-        <h2>السعر</h2>
-      </div>
-
-      <div className="br"></div>
-
-      <div className="items-dis">
-        <div className="item-dis">
-          <p>الحبة</p>
-          <p>25₺</p>
+      <div
+        style={
+          i18n.language === "ar" ? { direction: "ltr" } : { direction: "rtl" }
+        }
+      >
+        <div className="title-dis">
+          <h1>{t("Éclair")}</h1>
+          <h2>{t("Price")}</h2>
         </div>
-      </div>
 
-      <div className="order-btn">
-        <Link
-          className="link-btn"
-          to="https://wa.me/+905313591682?text=السلام%20عليكم%2C%20اريد%20طلب%20بعض%20الحلويات"
-        >
-          اطلب الان
-        </Link>
+        <div className="br"></div>
+
+        <div className="items-dis">
+          <div className="item-dis">
+            <p>{t("One piece")}</p>
+            <p>25₺</p>
+          </div>
+        </div>
+
+        <div className="order-btn">
+          <Link
+            className="link-btn"
+            to={`https://wa.me/+905313591682?text=${encodeURIComponent(
+              t("WhatsApp Message")
+            )}`}
+          >
+            {t("Order Now")}
+          </Link>
+        </div>
       </div>
     </>
   );

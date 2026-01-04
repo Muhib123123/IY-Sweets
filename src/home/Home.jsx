@@ -4,6 +4,8 @@ import { Link } from "react-router";
 import Header from "./header";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+
 
 function Home() {
   const [show, setShow] = useState({
@@ -12,6 +14,9 @@ function Home() {
     p2: false,
     btn: false
   });
+
+  const { t } = useTranslation();
+
 
   useEffect(() => {
     const handleShow = () => {
@@ -51,12 +56,12 @@ function Home() {
         <Header />
         <div className="content">
           <div className={`title ${show.title && "show-home"}`}>
-            <h1>IY Sweets</h1>
+            <h1>IY {t("Sweets")}</h1>
           </div>
           <div className="text">
-            <p className={`p1 ${show.p1 && "show-home"}`}>لمسة بيتية… مذاق لا يُنسى</p>
-            <p className={`p2 ${show.p2 && "show-home"}`}>Fresh Handmade</p>
-            <Link to="/menu" className={`${show.btn && "show-home"}`}>عرض المنتجات</Link>
+            <p className={`p1 ${show.p1 && "show-home"}`}>{t("A homey touch… an unforgettable taste")}</p>
+            <p className={`p2 ${show.p2 && "show-home"}`}>{t("Fresh Handmade")}</p>
+            <Link to="/menu" className={`${show.btn && "show-home"}`}>{t("Show products")}</Link>
           </div>
         </div>
       </div>
