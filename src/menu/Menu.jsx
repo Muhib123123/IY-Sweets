@@ -2,17 +2,45 @@ import Header from "../home/header";
 import "./Menu.css";
 import { Link } from "react-router";
 import cheeseCake from "../assets/cheeseCake.jpg";
-import cupCake from "../assets/cup.jpg";
+import cupOfCake from "../assets/cup.jpg";
 import cakeWithMilk from "../assets/cakeWithMilk.jpg";
 import aklear from "../../src/assets/aklear.jpg";
 import norCake from "../../src/assets/norCake.jpg";
 import iceCake from "../../src/assets/iceCake.jpg";
 import donuts from "../../src/assets/donuts.jpg";
+import miniCake from "../../src/assets/miniCakes.jpeg";
+import boxCake from "../../src/assets/boxCake.jpeg";
+import WholeCake from "../../src/assets/WholeCake.jpeg";
+import cupCake from "../../src/assets/cupCakes.jpeg";
 import { useTranslation } from "react-i18next";
 
 function Menu() {
   const { t } = useTranslation();
   const items = [
+    {
+      id: crypto.randomUUID(),
+      src: boxCake,
+      title: t("Box of Cakes"),
+      link: "/menu/boxCake",
+    },
+    {
+      id: crypto.randomUUID(),
+      src: WholeCake,
+      title: t("Customised Cake"),
+      link: "/menu/customCake",
+    },
+    {
+      id: crypto.randomUUID(),
+      src: miniCake,
+      title: t("Mini Cakes"),
+      link: "/menu/miniCake",
+    },
+    {
+      id: crypto.randomUUID(),
+      src: cupCake,
+      title: t("Cupcakes"),
+      link: "/menu/cupCake",
+    },
     {
       id: crypto.randomUUID(),
       src: cheeseCake,
@@ -27,9 +55,9 @@ function Menu() {
     },
     {
       id: crypto.randomUUID(),
-      src: cupCake,
-      title: t("Cupcakes"),
-      link: "/menu/cupCakes",
+      src: cupOfCake,
+      title: t("Cup of Cake"),
+      link: "/menu/cupOfCake",
     },
     {
       id: crypto.randomUUID(),

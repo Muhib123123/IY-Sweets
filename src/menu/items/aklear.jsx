@@ -23,7 +23,7 @@ function Aklear() {
         <div className="items-dis">
           <div className="item-dis">
             <p>{t("One piece")}</p>
-            <p>25₺</p>
+            <p>35₺</p>
           </div>
         </div>
 

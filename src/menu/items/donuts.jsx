@@ -5,8 +5,8 @@ import { useTranslation } from "react-i18next";
 
 function Donuts() {
   const { t, i18n } = useTranslation();
-  const price = 40;
-  const price2 = 50;
+  const price = 50;
+  const price2 = 60;
   const items = [
     {
       id: crypto.randomUUID(),

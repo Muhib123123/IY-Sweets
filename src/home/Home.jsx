@@ -56,7 +56,7 @@ function Home() {
         <Header />
         <div className="content">
           <div className={`title ${show.title && "show-home"}`}>
-            <h1>IY {t("Sweets")}</h1>
+            <h1>IY Sweety</h1>
           </div>
           <div className="text">
             <p className={`p1 ${show.p1 && "show-home"}`}>{t("A homey touch… an unforgettable taste")}</p>

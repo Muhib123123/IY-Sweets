@@ -1,25 +1,26 @@
 import Header from "../../home/header";
-import "./items.css";
 import { Link } from "react-router";
+import "./items.css";
 import { useTranslation } from "react-i18next";
 
-function IceCake() {
+function CupOfCake() {
   const { t, i18n } = useTranslation();
+  const price = 80;
   const items = [
     {
       id: crypto.randomUUID(),
-      price: 55,
-      name: t("Ice Cream Cake"),
+      price: price,
+      name: t("Vanilla"),
     },
     {
       id: crypto.randomUUID(),
-      price: 40,
-      name: t("Babous Cake"),
+      price: price,
+      name: t("Chocolate"),
     },
   ];
   return (
     <>
-      <title>IY-Ice-Cream-Cake</title>
+      <title>IY-Cupcakes</title>
       <Header />
       <div
         style={
@@ -27,7 +28,7 @@ function IceCake() {
         }
       >
         <div className="title-dis">
-          <h1>{t("Ice Cream Cake")}</h1>
+          <h1>{t("Cupcakes")}</h1>
           <h2>{t("Price")}</h2>
         </div>
         <div className="br"></div>
@@ -54,4 +55,4 @@ function IceCake() {
   );
 }
 
-export default IceCake;
+export default CupOfCake;

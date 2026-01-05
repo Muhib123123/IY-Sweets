@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 function CheeseCake() {
   const { t, i18n } = useTranslation();
-  const price = 75;
+  const price = 95;
   const items = [
     {
       id: crypto.randomUUID(),

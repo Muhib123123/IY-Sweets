@@ -8,7 +8,7 @@ function NorCake() {
   const items = [
     {
       id: crypto.randomUUID(),
-      price: 15,
+      price: 20,
       name: t("One piece"),
     },
     {

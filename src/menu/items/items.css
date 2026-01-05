@@ -73,6 +73,21 @@
   color: #60be3d;
 }
 
+.cos-cake {
+  display: block;
+  text-align: center
+}
+
+.cos-cup {
+  display: block;
+  text-align: center;
+}
+
+.cos-cup-ar {
+  display: block;
+  text-align: center;
+}
+
 @media (max-width: 1024px) {
   .title-dis h1 {
     font-size: 1.6rem;
@@ -95,6 +110,14 @@
   }
   .link-btn {
     font-size: 1.1rem;
+  }
+  .cos-cake {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cos-cup {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -126,6 +149,15 @@
   .link-btn {
     font-size: 1rem;
   }
+  .cos-cake {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 85%;
+  }
+  .cos-cup {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -155,5 +187,29 @@
   }
   .link-btn {
     font-size: 0.8rem;
+  }
+  .cos-cake {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 90%;
+  }
+  .cos-cup {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 95%;
+  }
+  .cos-cup-ar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .cos-box {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 90%;
+  }
+  .cos-box-ar {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 85%;
   }
 }

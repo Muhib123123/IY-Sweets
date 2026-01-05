@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 function CakeWithMilk() {
   const { t, i18n } = useTranslation();
-  const price = 70;
+  const price = 90;
 
   const items = [
     {
