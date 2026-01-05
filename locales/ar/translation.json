@@ -2,7 +2,7 @@
   "Arabic": "العربية",
   "English": "الإنجليزية",
   "Turkish": "التركية",
-  
+
   "Show the menu": "عرض القائمة",
   "A homey touch… an unforgettable taste": "لمسة بيتية… مذاق لا يُنسى",
   "Sweets": "حلويات",
@@ -10,7 +10,7 @@
   "Fresh Handmade": "طازج ومصنوع يدويًا",
   "Cheesecakes": "تشيز كيك",
   "Donuts": "دونات",
-  "Cupcakes": "كاسة كيك",
+  "Cup of Cake": "كاسة كيك",
   "Milk Cake": "كيكة بالحليب",
   "Éclair": "إكلير",
   "Ice Cream Cake": "آيس كريم كيك",
@@ -33,6 +33,18 @@
   "Stuffed Donuts": "دونات محشية",
   "Babous Cake": "ببوس كيك",
   "Whole Cake (20 pieces)": "القالب (20 قطعة)",
+  "Customised Cake": "كيك حسب الطلب",
+  "Box of Cakes": "بوكس كيك",
+  "Mini Cakes": "ميني كيك",
+  "Cupcakes + Mini cakes + Babous cakes": "كب كيك + ميني كيك + ببوس كيك",
+  "Mini (1 person)": "ميني (شخص واحد)",
+  "Mini (2 - 4 persons)": "ميني (2 - 4 أشخاص)",
+  "According to size and design starts from 900₺": "كيك حسب التصميم والحجم السعر يبدأ من ₺900",
+  "Cupcakes": "كب كيك",
+  "Cupcake (1 piece)": "كب كيك (قطعة واحدة)",
+  "Cupcake Bauquet (1 piece)": "باقة كب كيك (قطعة واحدة)",
+  "Cupcake Bauquet (7 pieces)": "باقة كب كيك (7 قطع)",
+  "Cupcake Bauquet (more then 7 pieces) starts from 600₺": "باقة كب كيك (اكثر من 7 قطع) يبدأ من ₺600",
 
   "WhatsApp Message": "السلام عليكم، اريد طلب بعض الحلويات"
 }
