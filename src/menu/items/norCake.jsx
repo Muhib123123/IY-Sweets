@@ -13,7 +13,7 @@ function NorCake() {
     },
     {
       id: crypto.randomUUID(),
-      price: 175,
+      price: 250,
       name: t("Whole Cake (20 pieces)"),
     },
   ];
