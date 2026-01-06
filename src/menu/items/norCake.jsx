@@ -8,13 +8,18 @@ function NorCake() {
   const items = [
     {
       id: crypto.randomUUID(),
-      price: 20,
-      name: t("One piece"),
+      price: 80,
+      name: t("Chocolate Cake Slice"),
+    },
+    {
+      id: crypto.randomUUID(),
+      price: 30,
+      name: t("Plain Cake Slice"),
     },
     {
       id: crypto.randomUUID(),
       price: 250,
-      name: t("Whole Cake (20 pieces)"),
+      name: t("Whole Plain Cake (20 pieces)"),
     },
   ];
   return (
@@ -27,7 +32,9 @@ function NorCake() {
         }
       >
         <div className="title-dis">
-          <h1>{t("Plain Cake")}</h1>
+          <h1>
+            {t("Cake slices")}
+          </h1>
           <h2>{t("Price")}</h2>
         </div>
         <div className="br"></div>
@@ -39,6 +46,7 @@ function NorCake() {
             </div>
           ))}
         </div>
+
         <div className="order-btn">
           <Link
             className="link-btn"

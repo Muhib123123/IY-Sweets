@@ -2,10 +2,10 @@ import Header from "../home/header";
 import "./Menu.css";
 import { Link } from "react-router";
 import cheeseCake from "../assets/cheeseCake.jpg";
-import cupOfCake from "../assets/cup.jpg";
+import cupOfCake from "../assets/cup.jpeg";
 import cakeWithMilk from "../assets/cakeWithMilk.jpg";
-import aklear from "../../src/assets/aklear.jpg";
-import norCake from "../../src/assets/norCake.jpg";
+import aklear from "../../src/assets/aklear.jpeg";
+import norCake from "../../src/assets/norCake.jpeg";
 import iceCake from "../../src/assets/iceCake.jpg";
 import donuts from "../../src/assets/donuts.jpg";
 import miniCake from "../../src/assets/miniCakes.jpeg";
@@ -80,7 +80,7 @@ function Menu() {
     {
       id: crypto.randomUUID(),
       src: norCake,
-      title: t("Plain Cake"),
+      title: t("Cake slices"),
       link: "/menu/plainCake",
     },
   ];

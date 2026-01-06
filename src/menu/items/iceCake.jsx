@@ -2,32 +2,43 @@ import Header from "../../home/header";
 import "./items.css";
 import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
-
+import ice1 from "../../assets/ice1.jpeg"
 function IceCake() {
   const { t, i18n } = useTranslation();
   const items = [
     {
       id: crypto.randomUUID(),
       price: 55,
-      name: t("Ice Cream Cake"),
+      name: t("Ice Cream Cakes"),
     },
     {
       id: crypto.randomUUID(),
       price: 40,
       name: t("Babous Cake"),
     },
+    {
+      id: crypto.randomUUID(),
+      price: 25,
+      name: t("Slave's head"),
+    },
+    
   ];
   return (
     <>
       <title>IY-Ice-Cream-Cake</title>
       <Header />
+      <div className="container">
+        <div className="item">
+          <img src={ice1} alt="" />
+        </div>
+      </div>
       <div
         style={
           i18n.language === "ar" ? { direction: "ltr" } : { direction: "rtl" }
         }
       >
         <div className="title-dis">
-          <h1>{t("Ice Cream Cake")}</h1>
+          <h1>{t("Ice Cream Cakes")}</h1>
           <h2>{t("Price")}</h2>
         </div>
         <div className="br"></div>
