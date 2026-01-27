@@ -7,7 +7,7 @@ import cakeWithMilk from "../assets/cakeWithMilk.jpg";
 import aklear from "../../src/assets/aklear.jpeg";
 import norCake from "../../src/assets/norCake.jpeg";
 import iceCake from "../../src/assets/iceCake.jpg";
-import donuts from "../../src/assets/donuts.jpg";
+import donutsExtra from "../../src/assets/DonutExtra.jpeg";
 import miniCake from "../../src/assets/miniCakes.jpeg";
 import boxCake from "../../src/assets/boxCake.jpeg";
 import WholeCake from "../../src/assets/WholeCake.jpeg";
@@ -49,7 +49,7 @@ function Menu() {
     },
     {
       id: crypto.randomUUID(),
-      src: donuts,
+      src: donutsExtra,
       title: t("Donuts"),
       link: "/menu/donuts",
     },

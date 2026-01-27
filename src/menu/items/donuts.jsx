@@ -2,6 +2,8 @@ import Header from "../../home/header";
 import "./items.css";
 import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
+import extra2 from "../../assets/DonutExtra2.jpeg"
+import normal from "../../assets/donuts.jpg" 
 
 function Donuts() {
   const { t, i18n } = useTranslation();
@@ -18,6 +20,16 @@ function Donuts() {
       price: price,
       name: t("White Chocolate"),
     },
+    {
+      id: crypto.randomUUID(),
+      price: 65,
+      name: t("Dark Chocolate Extra"),
+    },
+    {
+      id: crypto.randomUUID(),
+      price: 65,
+      name: t("White Chocolate Extra"),
+    },
   ];
 
   const items2 = [
@@ -31,12 +43,26 @@ function Donuts() {
       price: price2,
       name: t("Éclair"),
     },
+    {
+      id: crypto.randomUUID(),
+      price: 75,
+      name: t("Chocolate Extra"),
+    },
+    {
+      id: crypto.randomUUID(),
+      price: 75,
+      name: t("Éclair Extra"),
+    },
   ];
 
   return (
     <>
       <title>IY-Donuts</title>
       <Header />
+      <div className="container">
+        <div className="item"><img src={normal} alt="" /></div>
+        <div className="item"><img src={extra2} alt="" /></div>
+      </div>
       <div
         style={
           i18n.language === "ar" ? { direction: "ltr" } : { direction: "rtl" }
