@@ -24,7 +24,7 @@
   "Chocolate Cake Slice": "Chocolate Cake Slice",
   "Plain Cake Slice": "Plain Cake Slice",
   "Oreo": "Oreo",
-  "Dubai Chocolate" : "Dubai Chocolate",
+  "Dubai Chocolate": "Dubai Chocolate",
   "Caramel": "Caramel",
   "Fruits": "Fruits",
   "Mix Chocolate and Lotus": "Mix Chocolate and Lotus",
@@ -51,6 +51,10 @@
   "Cupcake Bauquet (1 piece)": "Cupcake Bouquet (1 piece)",
   "Cupcake Bauquet (7 pieces)": "Cupcake Bouquet (7 pieces)",
   "Cupcake Bauquet (more then 7 pieces) starts from 600₺": "Cupcake Bauquet (more then 7 pieces) starts from 600₺",
+  "Dark Chocolate Extra": "Dark Chocolate Extra",
+  "White Chocolate Extra": "White Chocolate Extra",
+  "Chocolate Extra": "Chocolate Extra",
+  "Éclair Extra": "Éclair Extra",
 
   "WhatsApp Message": "Hello, I want to order some sweets"
 }
