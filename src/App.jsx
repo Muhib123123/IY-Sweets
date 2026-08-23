@@ -13,27 +13,28 @@ import BoxCake from "./menu/items/boxCake";
 import MiniCake from "./menu/items/miniCake";
 import WholeCake from "./menu/items/wholeCake";
 import CupCake from "./menu/items/cupCake";
-
+import Cookies from "./menu/items/cookies";
 
 function App() {
   return (
     <HashRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/menu/cheeseCake" element={<CheeseCake />} />
-          <Route path="/menu/cupOfCake" element={<CupOfCake />} />
-          <Route path="/menu/milkCake" element={<CakeWithMilk />} />
-          <Route path="/menu/eclair" element={<Aklear />} />
-          <Route path="/menu/plainCake" element={<NorCake />} />
-          <Route path="/menu/iceCreamCakes" element={<IceCake />} />
-          <Route path="/menu/donuts" element={<Donuts />} />
-          <Route path="/menu/boxCake" element={<BoxCake />} />
-          <Route path="/menu/miniCake" element={<MiniCake />} />
-          <Route path="/menu/customCake" element={<WholeCake />} />
-          <Route path="/menu/cupCake" element={<CupCake />} />
-          <Route path="*" element={<NotFound />}></Route>
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/menu/cheeseCake" element={<CheeseCake />} />
+        <Route path="/menu/cupOfCake" element={<CupOfCake />} />
+        <Route path="/menu/milkCake" element={<CakeWithMilk />} />
+        <Route path="/menu/eclair" element={<Aklear />} />
+        <Route path="/menu/plainCake" element={<NorCake />} />
+        <Route path="/menu/iceCreamCakes" element={<IceCake />} />
+        <Route path="/menu/donuts" element={<Donuts />} />
+        <Route path="/menu/boxCake" element={<BoxCake />} />
+        <Route path="/menu/miniCake" element={<MiniCake />} />
+        <Route path="/menu/customCake" element={<WholeCake />} />
+        <Route path="/menu/cupCake" element={<CupCake />} />
+        <Route path="/menu/cookies" element={<Cookies />} />
+        <Route path="*" element={<NotFound />}></Route>
+      </Routes>
     </HashRouter>
   );
 }

@@ -5,34 +5,12 @@ import { useTranslation } from "react-i18next";
 
 function CheeseCake() {
   const { t, i18n } = useTranslation();
-  const price = 95;
+
   const items = [
-    {
-      id: crypto.randomUUID(),
-      price: price,
-      name: t("Lotus"),
-    },
-    {
-      id: crypto.randomUUID(),
-      price: price,
-      name: t("Chocolate"),
-    },
-    {
-      id: crypto.randomUUID(),
-      price: price,
-      name: t("Strawberry"),
-    },
-    {
-      id: crypto.randomUUID(),
-      price: price,
-      name: t("Caramel"),
-    },
-    {
-      id: crypto.randomUUID(),
-      price: price,
-      name: t("Pistachio"),
-    },
+    { id: crypto.randomUUID(), name: t("Cheesecake small"), price: "90₺" },
+    { id: crypto.randomUUID(), name: t("Cheesecake large"), price: "120₺" },
   ];
+
   return (
     <>
       <title>IY-Cheesecake</title>
@@ -51,7 +29,7 @@ function CheeseCake() {
           {items.map((item) => (
             <div className="item-dis" key={item.id}>
               <p>{item.name}</p>
-              <p>{item.price}₺</p>
+              <p>{item.price}</p>
             </div>
           ))}
         </div>
@@ -59,7 +37,7 @@ function CheeseCake() {
           <Link
             className="link-btn"
             to={`https://wa.me/+905313591682?text=${encodeURIComponent(
-              t("WhatsApp Message")
+              t("WhatsApp Message"),
             )}`}
           >
             {t("Order Now")}

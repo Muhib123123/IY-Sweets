@@ -12,6 +12,7 @@ import miniCake from "../../src/assets/miniCakes.jpeg";
 import boxCake from "../../src/assets/boxCake.jpeg";
 import WholeCake from "../../src/assets/WholeCake.jpeg";
 import cupCake from "../../src/assets/cupCakes.jpeg";
+import cookies from "../../src/assets/cookies.jpeg";
 import { useTranslation } from "react-i18next";
 
 function Menu() {
@@ -19,9 +20,9 @@ function Menu() {
   const items = [
     {
       id: crypto.randomUUID(),
-      src: boxCake,
-      title: t("Box of Cakes"),
-      link: "/menu/boxCake",
+      src: miniCake,
+      title: t("Mini Cake"),
+      link: "/menu/miniCake",
     },
     {
       id: crypto.randomUUID(),
@@ -31,9 +32,9 @@ function Menu() {
     },
     {
       id: crypto.randomUUID(),
-      src: miniCake,
-      title: t("Mini Cakes"),
-      link: "/menu/miniCake",
+      src: boxCake,
+      title: t("Box of Cakes"),
+      link: "/menu/boxCake",
     },
     {
       id: crypto.randomUUID(),
@@ -82,6 +83,12 @@ function Menu() {
       src: norCake,
       title: t("Cake slices"),
       link: "/menu/plainCake",
+    },
+    {
+      id: crypto.randomUUID(),
+      src: cookies,
+      title: t("Cookies"),
+      link: "/menu/cookies",
     },
   ];
 

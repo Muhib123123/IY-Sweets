@@ -5,25 +5,11 @@ import { useTranslation } from "react-i18next";
 
 function CakeWithMilk() {
   const { t, i18n } = useTranslation();
-  const price = 90;
 
   const items = [
-    {
-      id: crypto.randomUUID(),
-      price: price,
-      name: t("Caramel"),
-    },
-    {
-      id: crypto.randomUUID(),
-      price: price,
-      name: t("Fruits"),
-    },
-    {
-      id: crypto.randomUUID(),
-      price: price,
-      name: t("Mix Chocolate and Lotus"),
-    },
+    { id: crypto.randomUUID(), name: t("Milk cake"), price: "150₺" },
   ];
+
   return (
     <>
       <title>IY-Milk-Cake</title>
@@ -44,7 +30,7 @@ function CakeWithMilk() {
           {items.map((item) => (
             <div key={item.id} className="item-dis">
               <p>{item.name}</p>
-              <p>{item.price}₺</p>
+              <p>{item.price}</p>
             </div>
           ))}
         </div>
@@ -53,7 +39,7 @@ function CakeWithMilk() {
           <Link
             className="link-btn"
             to={`https://wa.me/+905313591682?text=${encodeURIComponent(
-              t("WhatsApp Message")
+              t("WhatsApp Message"),
             )}`}
           >
             {t("Order Now")}

@@ -2,27 +2,17 @@ import Header from "../../home/header";
 import "./items.css";
 import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
-import ice1 from "../../assets/ice1.jpeg"
+import ice1 from "../../assets/ice1.jpeg";
+
 function IceCake() {
   const { t, i18n } = useTranslation();
   const items = [
-    {
-      id: crypto.randomUUID(),
-      price: 55,
-      name: t("Ice Cream Cakes"),
-    },
-    {
-      id: crypto.randomUUID(),
-      price: 40,
-      name: t("Babous Cake"),
-    },
-    {
-      id: crypto.randomUUID(),
-      price: 25,
-      name: t("Slave's head"),
-    },
-    
+    { id: crypto.randomUUID(), price: "50₺", name: t("Ice cake regular") },
+    { id: crypto.randomUUID(), price: "70₺", name: t("Ice cake jumbo") },
+    { id: crypto.randomUUID(), price: "50₺", name: t("Pop cake") },
+    { id: crypto.randomUUID(), price: "40₺", name: t("Slave's head") },
   ];
+
   return (
     <>
       <title>IY-Ice-Cream-Cake</title>
@@ -46,7 +36,7 @@ function IceCake() {
           {items.map((item) => (
             <div key={item.id} className="item-dis">
               <p>{item.name}</p>
-              <p>{item.price}₺</p>
+              <p>{item.price}</p>
             </div>
           ))}
         </div>
@@ -54,7 +44,7 @@ function IceCake() {
           <Link
             className="link-btn"
             to={`https://wa.me/+905313591682?text=${encodeURIComponent(
-              t("WhatsApp Message")
+              t("WhatsApp Message"),
             )}`}
           >
             {t("Order Now")}

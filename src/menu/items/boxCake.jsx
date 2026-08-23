@@ -6,16 +6,32 @@ import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 
 export default function BoxCake() {
-    const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const items = [
+    {
+      id: crypto.randomUUID(),
+      name: t("Mini cake + 2 pop cakes + 2 ice cakes"),
+      price: "1200₺",
+    },
+    {
+      id: crypto.randomUUID(),
+      name: t(
+        "Available in different sizes and quantities according to your request",
+      ),
+      price: "",
+    },
+  ];
+
   return (
     <>
       <title>IY-Box-Cake</title>
       <Header />
       <div className="container">
-        <div className="item" >
+        <div className="item">
           <img src={box1} alt="" />
         </div>
-        <div className="item" >
+        <div className="item">
           <img src={box2} alt="" />
         </div>
       </div>
@@ -32,17 +48,22 @@ export default function BoxCake() {
         <div className="br"></div>
 
         <div className="items-dis">
-          <div className={`item-dis ${i18n.language === "ar" ? "cos-box-ar" : "cos-box"}`}>
-            <p>{t("Cupcakes + Mini cakes + Babous cakes")}</p>
-            <p>1000₺</p>
-          </div>
+          {items.map((item) => (
+            <div
+              key={item.id}
+              className={`item-dis ${i18n.language === "ar" ? "cos-box-ar" : "cos-box"}`}
+            >
+              <p>{item.name}</p>
+              {item.price ? <p>{item.price}</p> : null}
+            </div>
+          ))}
         </div>
 
         <div className="order-btn">
           <Link
             className="link-btn"
             to={`https://wa.me/+905313591682?text=${encodeURIComponent(
-              t("WhatsApp Message")
+              t("WhatsApp Message"),
             )}`}
           >
             {t("Order Now")}

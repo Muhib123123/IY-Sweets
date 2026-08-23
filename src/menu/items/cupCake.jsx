@@ -7,6 +7,27 @@ import cupCake2 from "../../assets/cupCake2.jpeg";
 
 export default function CupCake() {
   const { t, i18n } = useTranslation();
+
+  const items = [
+    { id: crypto.randomUUID(), name: t("Cupcake regular"), price: "60₺" },
+    { id: crypto.randomUUID(), name: t("Cupcake rose"), price: "75₺" },
+    {
+      id: crypto.randomUUID(),
+      name: t("Cupcake rose in bouquet"),
+      price: "90₺",
+    },
+    {
+      id: crypto.randomUUID(),
+      name: t("Cupcake bouquet (7 pieces)"),
+      price: "600₺",
+    },
+    {
+      id: crypto.randomUUID(),
+      name: t("Cupcake bouquet (more than 7 pieces) starts from 680₺"),
+      price: "",
+    },
+  ];
+
   return (
     <>
       <title>IY-Cupcake</title>
@@ -32,28 +53,23 @@ export default function CupCake() {
         <div className="br"></div>
 
         <div className="items-dis">
-          <div className="item-dis">
-            <p>{t("Cupcake (1 piece)")}</p>
-            <p>50₺</p>
-          </div>
-          <div className="item-dis">
-            <p>{t("Cupcake Bauquet (1 piece)")}</p>
-            <p>75₺</p>
-          </div>
-          <div className="item-dis">
-            <p>{t("Cupcake Bauquet (7 pieces)")}</p>
-            <p>525₺</p>
-          </div>
-          <div className={`item-dis ${i18n.language === "ar" ? "cos-cup-ar" : "cos-cup"}`}>
-            <p>{t("Cupcake Bauquet (more then 7 pieces) starts from 600₺")}</p>
-          </div>
+          {items.map((item) => (
+            <div
+            style={{display: "flex", paddingLeft:"40px", paddingRight: "40px"}}
+              key={item.id}
+              className={`item-dis ${i18n.language === "ar" ? "cos-cup-ar" : "cos-cup"}`}
+            > 
+              <p>{item.name}</p>
+              <p>{item.price}</p>
+            </div>
+          ))}
         </div>
 
         <div className="order-btn">
           <Link
             className="link-btn"
             to={`https://wa.me/+905313591682?text=${encodeURIComponent(
-              t("WhatsApp Message")
+              t("WhatsApp Message"),
             )}`}
           >
             {t("Order Now")}

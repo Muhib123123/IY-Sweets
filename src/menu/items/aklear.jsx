@@ -2,8 +2,10 @@ import Header from "../../home/header";
 import "./items.css";
 import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
+
 function Aklear() {
   const { t, i18n } = useTranslation();
+
   return (
     <>
       <title>IY-Éclair</title>
@@ -22,8 +24,8 @@ function Aklear() {
 
         <div className="items-dis">
           <div className="item-dis">
-            <p>{t("One piece")}</p>
-            <p>35₺</p>
+            <p>{t("Éclair (per kg)")}</p>
+            <p>550₺</p>
           </div>
         </div>
 
@@ -31,7 +33,7 @@ function Aklear() {
           <Link
             className="link-btn"
             to={`https://wa.me/+905313591682?text=${encodeURIComponent(
-              t("WhatsApp Message")
+              t("WhatsApp Message"),
             )}`}
           >
             {t("Order Now")}
