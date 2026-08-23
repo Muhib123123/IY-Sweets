@@ -2,6 +2,8 @@ import Header from "../../home/header";
 import "./items.css";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
+import layersInside from "../../assets/layersinside.jpeg";
+import layersInside2 from "../../assets/layersinside2.jpeg";
 
 export default function TieredCake() {
   const { t, i18n } = useTranslation();
@@ -22,6 +24,14 @@ export default function TieredCake() {
     <>
       <title>IY-Tiered-Cake</title>
       <Header />
+      <div className="container">
+        <div className="item">
+          <img src={layersInside} alt="" />
+        </div>
+        <div className="item">
+          <img src={layersInside2} alt="" />
+        </div>
+      </div>
       <div
         style={
           i18n.language === "ar" ? { direction: "ltr" } : { direction: "rtl" }
