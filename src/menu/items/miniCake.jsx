@@ -15,14 +15,14 @@ export default function MiniCake() {
       name: t(
         "Mini cake (4 persons) - starts from 850₺ with whipped cream packaging",
       ),
-      price: "850₺+",
+      price: "",
     },
     {
       id: crypto.randomUUID(),
       name: t(
         "Mini cake (4 persons) - starts from 1000₺ with butter packaging",
       ),
-      price: "1000₺+",
+      price: "",
     },
   ];
 
