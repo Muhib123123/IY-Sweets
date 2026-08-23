@@ -3,43 +3,39 @@ import { Link } from "react-router";
 import "./items.css";
 import { useTranslation } from "react-i18next";
 import cupOfCake1 from "../../assets/cupOfCake1.jpeg";
-import cupOfCake2 from "../../assets/cupOfCake2.jpeg"
+import cupOfCake2 from "../../assets/cupOfCake2.jpeg";
 
 function CupOfCake() {
   const { t, i18n } = useTranslation();
-  const price = 80;
   const items = [
     {
       id: crypto.randomUUID(),
-      price: "90",
-      name: t("Dubai Chocolate")
+      name: t("Dubai Chocolate"),
     },
     {
       id: crypto.randomUUID(),
-      price: price,
-      name: t("Oreo")
+      name: t("Oreo"),
     },
     {
       id: crypto.randomUUID(),
-      price: price,
-      name: t("Caramel")
+      name: t("Caramel"),
     },
     {
       id: crypto.randomUUID(),
-      price: price,
-      name: t("Pistachio")
+      name: t("Pistachio"),
     },
     {
       id: crypto.randomUUID(),
-      price: price,
-      name: t("Lotus")
+      name: t("Lotus"),
     },
     {
       id: crypto.randomUUID(),
-      price: price,
-      name: t("Strawberry")
-    }
-
+      name: t("Strawberry"),
+    },
+  ];
+  const sizes = [
+    { name: t("Cup of Cake Medium"), price: 100 },
+    { name: t("Cup of Cake Jumbo"), price: 150 },
   ];
   return (
     <>
@@ -58,24 +54,28 @@ function CupOfCake() {
           i18n.language === "ar" ? { direction: "ltr" } : { direction: "rtl" }
         }
       >
-        <div className="title-dis">
-          <h1>{t("Cup of Cake Jumbo")}</h1>
-          <h2>{t("Price")}</h2>
-        </div>
-        <div className="br"></div>
-        <div className="items-dis">
-          {items.map((item) => (
-            <div key={item.id} className="item-dis">
-              <p> {item.name}</p>
-              <p>{item.price}₺</p>
+        {sizes.map((size) => (
+          <section key={size.name}>
+            <div className="title-dis">
+              <h1>{size.name}</h1>
+              <h2>{t("Price")}</h2>
             </div>
-          ))}
-        </div>
+            <div className="br"></div>
+            <div className="items-dis">
+              {items.map((item) => (
+                <div key={`${size.name}-${item.id}`} className="item-dis">
+                  <p>{item.name}</p>
+                  <p>{size.price}₺</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        ))}
         <div className="order-btn">
           <Link
             className="link-btn"
             to={`https://wa.me/+905313591682?text=${encodeURIComponent(
-              t("WhatsApp Message")
+              t("WhatsApp Message"),
             )}`}
           >
             {t("Order Now")}

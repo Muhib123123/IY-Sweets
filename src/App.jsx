@@ -12,6 +12,7 @@ import NotFound from "./NotFound";
 import BoxCake from "./menu/items/boxCake";
 import MiniCake from "./menu/items/miniCake";
 import WholeCake from "./menu/items/wholeCake";
+import TieredCake from "./menu/items/tieredCake";
 import CupCake from "./menu/items/cupCake";
 import Cookies from "./menu/items/cookies";
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/menu/boxCake" element={<BoxCake />} />
         <Route path="/menu/miniCake" element={<MiniCake />} />
         <Route path="/menu/customCake" element={<WholeCake />} />
+        <Route path="/menu/tieredCake" element={<TieredCake />} />
         <Route path="/menu/cupCake" element={<CupCake />} />
         <Route path="/menu/cookies" element={<Cookies />} />
         <Route path="*" element={<NotFound />}></Route>

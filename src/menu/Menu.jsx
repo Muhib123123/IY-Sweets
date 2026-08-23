@@ -6,11 +6,12 @@ import cupOfCake from "../assets/cup.jpeg";
 import cakeWithMilk from "../assets/cakeWithMilk.jpg";
 import aklear from "../../src/assets/aklear.jpeg";
 import norCake from "../../src/assets/norCake.jpeg";
-import iceCake from "../../src/assets/iceCake.jpg";
+import iceBabosOutside from "../assets/iceBabosOutside.jpeg";
 import donutsExtra from "../../src/assets/DonutExtra.jpeg";
 import miniCake from "../../src/assets/miniCakes.jpeg";
 import boxCake from "../../src/assets/boxCake.jpeg";
 import WholeCake from "../../src/assets/WholeCake.jpeg";
+import layerCake from "../assets/layerCake.jpeg";
 import cupCake from "../../src/assets/cupCakes.jpeg";
 import cookies from "../../src/assets/cookies.jpeg";
 import { useTranslation } from "react-i18next";
@@ -29,6 +30,12 @@ function Menu() {
       src: WholeCake,
       title: t("Customised Cake"),
       link: "/menu/customCake",
+    },
+    {
+      id: crypto.randomUUID(),
+      src: layerCake,
+      title: t("Tiered Cake"),
+      link: "/menu/tieredCake",
     },
     {
       id: crypto.randomUUID(),
@@ -74,8 +81,8 @@ function Menu() {
     },
     {
       id: crypto.randomUUID(),
-      src: iceCake,
-      title: t("Ice Cream Cakes"),
+      src: iceBabosOutside,
+      title: t("Ice and Pop Cakes"),
       link: "/menu/iceCreamCakes",
     },
     {
